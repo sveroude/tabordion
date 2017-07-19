@@ -1,0 +1,80 @@
+body {
+    margin: 20px;
+    font-family: sans-serif;
+}
+
+a {
+    color: #3d656b;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+@media screen and (min-width: 800px) {
+
+    .tabs__list li {
+        padding-bottom: 20px;
+    }
+
+    .tabs__nav {
+        display: block;
+        float: left;
+        width: 25%;
+    }
+
+    .tabs__content {
+        float: left;
+        width: 75%;
+    }
+}
+
+.is-enhanced .tabs__nav {
+    display: none;
+}
+
+.is-enhanced .tabs__panel .tabs__panel__content {
+    display: none;
+}
+
+.is-enhanced .tabs__panel.is-active .tabs__panel__content {
+    display: block;
+    padding: 6px 12px;
+}
+
+@media screen and (max-width: 799px) {
+
+    .is-enhanced .tabs__trigger {
+        display: block;
+        margin-bottom: 6px;
+        padding: 6px 12px;
+        border: 1px solid #25221a;
+    }
+
+    .is-enhanced .tabs__trigger.is-active {
+        background-color: #f3f0e8;
+    }
+
+    .is-enhanced .tabs__panel__heading {
+        position: absolute;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        height: 1px; width: 1px;
+        margin: -1px; padding: 0; border: 0;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    .is-enhanced .tabs__nav {
+        display: block;
+    }
+
+    .is-enhanced .tabs__trigger.is-active {
+        color: #ce8c1c;
+    }
+
+    .is-enhanced .tabs__content .tabs__trigger {
+        display: none;
+    }
+}
